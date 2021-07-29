@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<title>jasonsscratchgame</title>
+
+<body style="background-color:red;">
+
+<center>
+<h1><I><u>Jason's Scratch Game W/ Progress</I></u></h1>
+</center>
+
+<BR><BR>
+<h1>Introduction</h1>
+<p style="color:black"><font size="4">For my Scratch game, I decided to create a car parking simulator. I got the idea a few days ago while driving with a driving instructor. Since I am practicing for my upcoming G2 license test, I figured that a driving and parking simulator would be helpful. I mainly struggle with my parking, especially my reverse parking. This game serves a purpose because it can teach people what kind of angles they need to approach a parking space with to have a good parking. It also builds good habits by teaching people that it is important to stay within the lines of a parking space. The neat thing is that you are able to do front, reverse and sometimes parallel parking while using my program.</p>
+
+
+
+<table border="1" align=left width=650>
+<tr>
+<td style="background-color: rgb(133, 132, 140)">Progress Photo</td>
+<td style="background-color: rgb(133, 132, 140)">Progress </td>
+<td style="background-color: rgb(133, 132, 140)">Day:
+</tr>
+
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)"><img src="https://imagizer.imageshack.com/img924/9633/c5uPpo.png" width=300 height=300 align=center></td>
+<td style="background-color: rgb(255, 255, 255)">On the first day, I created a Scratch account. I started the project off by brainstorming an idea for my assignment. In preparation for the assignment, I read online forums about Scratch and how the blocks function. After brainstorming, I came up with the idea of a parking simulator. I created two sprites: one for the directional arrow and one for the car. I input basic code that would allow the car to follow the directional arrow. To move the car, you would have to use the cursor for direction, the up arrow key to move forward and the down arrow key to move backwards. I also created variables that would allow the car to accelerate.</td>
+<td style="background-color: rgb(133, 132, 140)">1</td>
+</tr>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)"><img src="https://imagizer.imageshack.com/img924/2641/JBsNPj.png" width=300 height=300 align=center></td>
+<td style="background-color: rgb(255, 255, 255)">On day two, I created variables that would allow all of the keyboard arrows to function. I added blocks that would allow me to imitate an x and y joystick which would allow me to use all four arrow keys to move. I also created three new variables which would allow me to brake more smoothly, speed up and move more powerfully. I noticed that the directional arrow would lag whenever it was given a command to move. To fix this, I used a broadcast command which would allow the car body sprite to activate first. This removed the directional arrow lag completely.</td>
+<td style="background-color: rgb(133, 132, 140)">2</td>
+</tr>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)"><img src="https://imagizer.imageshack.com/img923/7780/PJjwEe.png" width=300 height=300 align=center></td>
+<td style="background-color: rgb(255, 255, 255)">On day three, I started creating the obstacle course and the framework for the game. The idea behind the game is that you must park within the parking space without hitting any obstacles. For the obstacle sprite, I created code that would cause the level to reset each time that the car hit an obstacle. For the parking space sprite, I created two costumes; one that would serve as the visual parking space and invisible rectangle within the parking space. The idea behind this is that whenever the car is within the invisible rectangle, it would cause the player to win. The purpose of this was to ensure that a player could not win if they were touching any of the lines of the parking space. I also created a sprite that would have a "You Win" message each time the player was inside the invisible rectangle.</td>
+<td style="background-color: rgb(133, 132, 140)">3</td>
+</tr>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)"><img src="https://imagizer.imageshack.com/img922/4813/TkPrId.png" width=300 height=300 align=center></td>
+<td style="background-color: rgb(255, 255, 255)">On the final day, I added details like additional levels, colours, functions to make driving smoother and small details like a horn and radio function. I created four levels for my game, each with increasing difficulty. I had to undergo a rigorous testing process to make sure that users are able to complete each level. I also had to test my functions to make sure that they worked and that there were no glitches. For some detail work, I added in a functional horn using a new sprite, some code and a generic horn sound from the Scratch Program. I also added a 'radio' which plays a beat that I made. Users are able to customize the volume and pitch of the beat as well. Overall, it a very busy day.</td>
+<td style="background-color: rgb(133, 132, 140)">4</td></table>
+</body>
+
+<h2>Testing Process</h2>
+
+<p style="color:blue"><font size="4">I went through a very lengthy testing process to figure out if there were any glitches and find out how I could correct them. Of course, there were glitches in my program that I had to work around. After every block of code that I placed, I tried to test it to see if it was working properly. For the most part, every part worked smoothly.</p>
+
+<h2>Problems During The Testing Process</h2>
+
+<table border="1" align=left width=650>
+<tr>
+<td style="background-color: rgb(133, 132, 140)">Issue</td>
+<td style="background-color: rgb(133, 132, 140)">Resolution</td>
+</tr>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)" width=25%>Level change not working</td>
+<td style="background-color: rgb(255, 255, 255)" width=75%>I originally had a system in place that would let the user automatically move onto the next level after they passed a level. For some reason, the system decided to stop working and I was unable to diagnose the exact source of the problem. Because of this problem, the user would only be able to progress to the next level half of the time. Sometimes users would get stuck on the first level and a have no way to progress. I worked around this issue by putting two systems in place. Firstly, I put a green button at the end of each course. When the user completes the course, they have to hit the green button with their car to move onto the next level. The second measure that I put into place was a manual override. If the user presses the start button and presses the letter c, then this will allow them to skip or change levels. </td>
+</tr>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)" width=25%>Directional Arrow Lag</td>
+<td style="background-color: rgb(255, 255, 255)" width=75%>On day two of my Scratch game, there was a good amount of lag between the movement of the directional arrow and the car. Whenever I would move the directional arrow, the car would lag one frame behind. To fix this, I used a broadcast block which would activate the car commands slightly before the arrow commands. This completely fixed the lag and helped them work together smoothly.</td>
+
+<tr>
+<td style="background-color: rgb(255, 255, 255)" width=25%>Parking Spot Not Working</td>
+<td style="background-color: rgb(255, 255, 255)" width=75%>Initially, I only had the outline for the parking space. I noticed that by doing this, anybody could win by simply placing their car on the parking spot line. I addressed this issue by making a rectangle within the parking space. I had to make sure that the rectangle was smaller than the parking space, but bigger than the car. By doing this, the user could only pass levels by orienting their car within the rectangle. To make the parking space more visually appealing, I made the rectangle invisible.</td>
+</tr></table>
+
+
+
+
+<h2>Changes That I Would Make</h2>
+
+<p style="color:blue"><font size="4">The biggest change that I would make for this assignment and this course in general is how I manage my time. I find that whenever I don't start a task as soon as it is assigned, I tend to fall behind. This means that I have to work exponentially harder to try and catch-up. I am satisfied with the product that I have produced, but I believe that if I had used my time more effectively, I could have researched more tricks for Scratch and incorporate them into my project. I could have added more levels and maybe a road for the course. I also could've added a vehicle selection menu which could've included trucks, motorcycles or other types of cars. I believe that the content that I put out is more than what was required, but there is always more room for improvement.<br><br> For future projects, I can learn to delegate and set my priorities straight. Trying to balance a job, family, a dog and summer school work is a challenge to balance, but it is something that I should've done better. I have learned through this assignment and this course that it is important to set your head straight and work without distractions. Through this course, I have also learned to be more detail oriented. A slight mistake in syntax or blocks for Scratch can result in a disaster. Something that I've struggled with especially in html is mixing different commands. For example, I can make a table and I can find an image, but I struggle placing an image inside of a table. Through the Scratch project, I realized how to integrate different commands with each other to produce a specific product. I learned how to use different components together which also helped me in how I view HTML. The Scratch project is the reason why this HTML page is much better than my previous ones.</p>
+
+<h2>
+
+
+
+
+
+
+
+
+</html>
